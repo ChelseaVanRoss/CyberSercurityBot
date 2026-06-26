@@ -113,33 +113,25 @@ namespace CyberSecurityBot
             string lower = input.ToLower();
 
             if (lower.Contains("exit") || lower.Contains("quit") || lower.Contains("bye"))
-                return $"Goodbye {userName}! Stay safe online! 👋";
+                return $"Goodbye {userName}! Stay safe online! 😊";
+
+            // ADD THIS NEW CODE RIGHT HERE ↓↓↓
+            if (lower.Contains("update") || lower.Contains("windows update"))
+                return "🔄 **Keep Windows Updated:** Regular updates fix security vulnerabilities! Enable automatic updates!";
 
             if (lower.Contains("help"))
-                return "📚 I can help with: passwords, phishing, safe browsing, 2FA, malware, and social media safety. Just ask!\n\n🎮 Also check out the Quiz Game tab to test your cybersecurity knowledge!";
+                return $"I can help with: passwords, phishing, safe browsing, 2FA, malware, and social media safety";
 
             if (lower.Contains("password"))
-                return "🔐 **Password Safety:** Use strong passwords (12+ characters, mix of letters/numbers/symbols). Never reuse passwords! Enable 2FA whenever possible.";
+                return $"**Password Safety:** Use strong passwords (12+ characters, mix of letters/numbers/symbols";
 
-            if (lower.Contains("phish") || lower.Contains("scam"))
-                return "🎣 **Phishing Alert:** Never click suspicious links! Check sender email addresses carefully. Legitimate companies never ask for personal info via email.";
+            if (lower.Contains("phish"))
+                return $"**Phishing Alert:** Never click suspicious links! Check sender email addresses carefully";
 
-            if (lower.Contains("brows") || lower.Contains("website"))
-                return "🌐 **Safe Browsing:** Look for 'https://' and the padlock icon. Avoid pop-ups and unknown downloads. Keep your browser updated.";
+            if (lower.Contains("brows"))
+                return $"**Website**";
 
-            if (lower.Contains("2fa") || lower.Contains("two factor"))
-                return "📱 **Two-Factor Authentication (2FA):** Adds extra security. Use authenticator apps like Google Authenticator or Authy instead of SMS.";
-
-            if (lower.Contains("malware") || lower.Contains("virus") || lower.Contains("ransomware"))
-                return "🦠 **Malware Protection:** Install antivirus software, don't download from unknown sources, keep Windows updated, and avoid suspicious pop-ups.";
-
-            if (lower.Contains("social media") || lower.Contains("facebook") || lower.Contains("instagram"))
-                return "📱 **Social Media Safety:** Don't share your location publicly, use privacy settings, don't accept friend requests from strangers, and never post your ID number.";
-
-            if (lower.Contains("how are you"))
-                return $"I'm great {userName}! Ready to teach you about cybersecurity! 😊";
-
-            return $"I didn't understand that, {userName}. Try asking about: passwords, phishing, safe browsing, 2FA, malware, or social media safety! Or check out the Quiz Game tab!";
+            // ... rest of your code
         }
 
         // ---------- QUIZ METHODS ----------
