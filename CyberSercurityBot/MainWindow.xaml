@@ -1,7 +1,7 @@
 ﻿<Window x:Class="CyberSecurityBot.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="🛡️ Cybersecurity Awareness Bot - Part 3" 
+        Title="🛡️ Cybersecurity Awareness Bot - v2.0"
         Height="650" Width="850"
         WindowStartupLocation="CenterScreen"
         Background="#1A1A2E">
